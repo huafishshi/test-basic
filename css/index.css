@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.head {
+    width: 1519px;
+    height: 40px;
+    background-color: #333333;
+}
+.left {
+    float: left;
+}
+.head .left a {
+    line-height: 40px;
+    text-align: center;
+    height: 100%;
+    color: #b0b0b0;
+}
+.head .left a:hover {
+    color: azure;
+}
+.head .left:nth-child(1) {
+    margin-left: 150px;
+}
+.head  .sep {
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#424242
+}
+.right {
+    float: left;
+    color: #b0b0b0;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 130px;
+}
+.right a {
+    color: #b0b0b0;
+}
+.right a:hover {
+    color: azure;
+}
+.home {
+    display: flex;
+    width: 1226px;
+    height: 460px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.home .left{
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    width:234px;
+    height: 420px;
+    background-color: rgba(105,101,101,.6);
+}
+.home .left ul {
+   font-size: 15px;
+}
+.home .left ul li {
+    position: relative;
+    width: 204px;
+    height: 42px;
+    padding-left: 30px; 
+}
+.home .left ul li:hover {
+    background-color: orange!important;
+}
+.home .left ul li a {
+    color: aliceblue;
+    line-height: 42px;
+}
+.home .left ul li::after {
+    content: ">";
+    position: absolute;
+    top: 4px;
+    left: 213px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.home .right{
+    position: relative;
+    flex:1;
+    /* width: 992px; */
+    height: 460px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    background-color: pink;
+    margin-left: 0px;
+    overflow:hidden;
+}
+.right ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+.right ul li {
+    float: left;
+
+} 
+
+.right ul li a img {
+    width: 1134px;
+    height: 460px;
+}
+
+.right .arrow-l,
+.right .arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    /* left: 0; */
+    margin-top: -20px;
+    width: 41px;
+    height: 69px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 69px;
+    color: black;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+.arrow-l {
+    left: 0;
+}
+.arrow-r {
+    right: 0;
+}
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+.intro {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+}
+.intro ul {
+    width: 100%;
+    height: 100%;
+}
+.intro ul li {
+    float: left;
+    width: 248px;
+    height: 90px;
+}
+.intro ul li a {
+    position: relative;
+    display: block;
+    width: 248px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+.intro ul li a:hover {
+    color: orange;
+}
+.intro ul li a img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 50px;
+}
